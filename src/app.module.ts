@@ -5,9 +5,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TodoModule } from './todo/todo.module';
 import { PostModule } from './post/post.module';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [CatsModule, PostModule],
+  imports: [CatsModule, PostModule, UserModule],
   controllers: [AppController],
   providers: [AppService],
   exports: []
